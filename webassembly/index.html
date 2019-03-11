@@ -91,7 +91,7 @@
         Web Assembly
       </header>
       <div class="slides">
-        <section>
+        <section style="text-align:center;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
@@ -136,7 +136,7 @@
           <div class="two-col">
             <ul>
               <li>JavaScript speed <nobr>race 🏎</nobr></li>
-              <li>
+              <li class="fragment" data-fragment-index="2">
                 Properties of JavaScript
                 <ul>
                   <li>Easy to learn</li>
@@ -150,6 +150,8 @@
               version="1.1"
               style="width: 500px; height: 330px; margin-right:-30px;"
               viewBox="0 0 530 360"
+              class="fragment"
+              data-fragment-index="1"
             >
               <desc>JavaScript chart by amCharts 3.21.9</desc>
               <g>
@@ -800,7 +802,7 @@
           </div>
         </section>
         <section>
-          <h2>Failed attempts</h2>
+          <h2>Previous attempts</h2>
           <div class="two-col">
             <ul>
               <li>Flash, Silverlight, Active X, Java Applets, …</li>
@@ -813,7 +815,7 @@
                 </ul>
               </li>
             </ul>
-            <pre>
+            <pre class="fragment">
 							<code data-trim data-noescape>
 									function strlen(ptr) {
 										ptr = ptr|0;
@@ -829,31 +831,28 @@
           </div>
         </section>
         <section>
-          <h2>Web Assembly</h2>
-          <ul>
-            <li>👍 Complements not replacing Javascript</li>
-            <li>⚙️ Compilation Target (C, C++, Rust)</li>
-            <ul>
-              <li>Static types</li>
-              <li>More Languages when GC is implemented</li>
-            </ul>
-            <li>
-              📈 ~30% performance increase
-            </li>
-            <li>
-              🛡️ Secure as Javascript by default
-            </li>
-            <li>🚀 Faster download and start time thanks to binary format</li>
-            <li>💻 Multiplatform (Native Mobile Apps, Desktop Apps)</li>
-          </ul>
-        </section>
-        <section>
           <h2>History of web assembly</h2>
           <img src="./history.png" />
         </section>
         <section>
-          <h2>browser support</h2>
-          <img src="./support.png" />
+          <h2>Web Assembly</h2>
+          <ul style="list-style: none">
+            <li class="fragment">⚙️ Compilation Target (C, C++, Rust)
+            <ul style="padding-left: 1em">
+                <li>Static types</li>
+                <li>More Languages when GC is implemented</li>
+              </ul>
+            </li>
+            <li class="fragment">
+              📈 ~30% performance increase
+            </li>
+            <li class="fragment">🚀 Faster download and start time thanks to binary format</li>
+            <li class="fragment">
+              🛡️ Secure as Javascript by default
+            </li>
+            <li class="fragment">👍 Complements not replacing Javascript</li>
+            <li class="fragment">💻 Multiplatform (Native Mobile Apps, Desktop Apps)</li>
+          </ul>
         </section>
         <section>
           <h2>Execution</h2>
@@ -914,7 +913,7 @@
             #mermaid-1552216614323 .node ellipse,
             #mermaid-1552216614323 .node polygon {
               fill: #ECECFF;
-              stroke: #9370DB;
+              stroke: #fff;
               stroke-width: 1px; }
             
             #mermaid-1552216614323 .node.clickable {
@@ -1265,43 +1264,43 @@
           </div>
               <div class="fragment">
               <h4 style="margin-top: 1em">Web Assembly</h4>
-              <svg id="mermaid-1552218090445" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 633.234375px;" viewBox="0 0 633.234375 78"><style>
+              <svg id="mermaid-1552329355307" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 757.796875px;" viewBox="0 0 757.796875 78"><style>
 
 
-                #mermaid-1552218090445 .label {
+                #mermaid-1552329355307 .label {
                   font-family: 'trebuchet ms', verdana, arial;
                   color: #333; }
                 
-                #mermaid-1552218090445 .node rect,
-                #mermaid-1552218090445 .node circle,
-                #mermaid-1552218090445 .node ellipse,
-                #mermaid-1552218090445 .node polygon {
+                #mermaid-1552329355307 .node rect,
+                #mermaid-1552329355307 .node circle,
+                #mermaid-1552329355307 .node ellipse,
+                #mermaid-1552329355307 .node polygon {
                   fill: #ECECFF;
-                  stroke: #9370DB;
+                  stroke: #fff;
                   stroke-width: 1px; }
                 
-                #mermaid-1552218090445 .node.clickable {
+                #mermaid-1552329355307 .node.clickable {
                   cursor: pointer; }
                 
-                #mermaid-1552218090445 .arrowheadPath {
+                #mermaid-1552329355307 .arrowheadPath {
                   fill: #fff; }
                 
-                #mermaid-1552218090445 .edgePath .path {
+                #mermaid-1552329355307 .edgePath .path {
                   stroke: #fff;
                   stroke-width: 1.5px; }
                 
-                #mermaid-1552218090445 .edgeLabel {
+                #mermaid-1552329355307 .edgeLabel {
                   background-color: #e8e8e8; }
                 
-                #mermaid-1552218090445 .cluster rect {
+                #mermaid-1552329355307 .cluster rect {
                   fill: #ffffde !important;
                   stroke: #aaaa33 !important;
                   stroke-width: 1px !important; }
                 
-                #mermaid-1552218090445 .cluster text {
+                #mermaid-1552329355307 .cluster text {
                   fill: #333; }
                 
-                #mermaid-1552218090445 div.mermaidTooltip {
+                #mermaid-1552329355307 div.mermaidTooltip {
                   position: absolute;
                   text-align: center;
                   max-width: 200px;
@@ -1314,323 +1313,326 @@
                   pointer-events: none;
                   z-index: 100; }
                 
-                #mermaid-1552218090445 .actor {
+                #mermaid-1552329355307 .actor {
                   stroke: #CCCCFF;
                   fill: #ECECFF; }
                 
-                #mermaid-1552218090445 text.actor {
+                #mermaid-1552329355307 text.actor {
                   fill: black;
                   stroke: none; }
                 
-                #mermaid-1552218090445 .actor-line {
+                #mermaid-1552329355307 .actor-line {
                   stroke: grey; }
                 
-                #mermaid-1552218090445 .messageLine0 {
+                #mermaid-1552329355307 .messageLine0 {
                   stroke-width: 1.5;
                   stroke-dasharray: '2 2';
                   stroke: #333; }
                 
-                #mermaid-1552218090445 .messageLine1 {
+                #mermaid-1552329355307 .messageLine1 {
                   stroke-width: 1.5;
                   stroke-dasharray: '2 2';
                   stroke: #333; }
                 
-                #mermaid-1552218090445 #arrowhead {
+                #mermaid-1552329355307 #arrowhead {
                   fill: #333; }
                 
-                #mermaid-1552218090445 #crosshead path {
+                #mermaid-1552329355307 #crosshead path {
                   fill: #333 !important;
                   stroke: #333 !important; }
                 
-                #mermaid-1552218090445 .messageText {
+                #mermaid-1552329355307 .messageText {
                   fill: #333;
                   stroke: none; }
                 
-                #mermaid-1552218090445 .labelBox {
+                #mermaid-1552329355307 .labelBox {
                   stroke: #CCCCFF;
                   fill: #ECECFF; }
                 
-                #mermaid-1552218090445 .labelText {
+                #mermaid-1552329355307 .labelText {
                   fill: black;
                   stroke: none; }
                 
-                #mermaid-1552218090445 .loopText {
+                #mermaid-1552329355307 .loopText {
                   fill: black;
                   stroke: none; }
                 
-                #mermaid-1552218090445 .loopLine {
+                #mermaid-1552329355307 .loopLine {
                   stroke-width: 2;
                   stroke-dasharray: '2 2';
                   stroke: #CCCCFF; }
                 
-                #mermaid-1552218090445 .note {
+                #mermaid-1552329355307 .note {
                   stroke: #aaaa33;
                   fill: #fff5ad; }
                 
-                #mermaid-1552218090445 .noteText {
+                #mermaid-1552329355307 .noteText {
                   fill: black;
                   stroke: none;
                   font-family: 'trebuchet ms', verdana, arial;
                   font-size: 14px; }
                 
-                #mermaid-1552218090445 .activation0 {
+                #mermaid-1552329355307 .activation0 {
                   fill: #f4f4f4;
                   stroke: #666; }
                 
-                #mermaid-1552218090445 .activation1 {
+                #mermaid-1552329355307 .activation1 {
                   fill: #f4f4f4;
                   stroke: #666; }
                 
-                #mermaid-1552218090445 .activation2 {
+                #mermaid-1552329355307 .activation2 {
                   fill: #f4f4f4;
                   stroke: #666; }
                 
                 
-                #mermaid-1552218090445 .section {
+                #mermaid-1552329355307 .section {
                   stroke: none;
                   opacity: 0.2; }
                 
-                #mermaid-1552218090445 .section0 {
+                #mermaid-1552329355307 .section0 {
                   fill: rgba(102, 102, 255, 0.49); }
                 
-                #mermaid-1552218090445 .section2 {
+                #mermaid-1552329355307 .section2 {
                   fill: #fff400; }
                 
-                #mermaid-1552218090445 .section1,
-                #mermaid-1552218090445 .section3 {
+                #mermaid-1552329355307 .section1,
+                #mermaid-1552329355307 .section3 {
                   fill: white;
                   opacity: 0.2; }
                 
-                #mermaid-1552218090445 .sectionTitle0 {
+                #mermaid-1552329355307 .sectionTitle0 {
                   fill: #333; }
                 
-                #mermaid-1552218090445 .sectionTitle1 {
+                #mermaid-1552329355307 .sectionTitle1 {
                   fill: #333; }
                 
-                #mermaid-1552218090445 .sectionTitle2 {
+                #mermaid-1552329355307 .sectionTitle2 {
                   fill: #333; }
                 
-                #mermaid-1552218090445 .sectionTitle3 {
+                #mermaid-1552329355307 .sectionTitle3 {
                   fill: #333; }
                 
-                #mermaid-1552218090445 .sectionTitle {
+                #mermaid-1552329355307 .sectionTitle {
                   text-anchor: start;
                   font-size: 11px;
                   text-height: 14px; }
                 
                 
-                #mermaid-1552218090445 .grid .tick {
+                #mermaid-1552329355307 .grid .tick {
                   stroke: lightgrey;
                   opacity: 0.3;
                   shape-rendering: crispEdges; }
                 
-                #mermaid-1552218090445 .grid path {
+                #mermaid-1552329355307 .grid path {
                   stroke-width: 0; }
                 
                 
-                #mermaid-1552218090445 .today {
+                #mermaid-1552329355307 .today {
                   fill: none;
                   stroke: red;
                   stroke-width: 2px; }
                 
                 
                 
-                #mermaid-1552218090445 .task {
+                #mermaid-1552329355307 .task {
                   stroke-width: 2; }
                 
-                #mermaid-1552218090445 .taskText {
+                #mermaid-1552329355307 .taskText {
                   text-anchor: middle;
                   font-size: 11px; }
                 
-                #mermaid-1552218090445 .taskTextOutsideRight {
+                #mermaid-1552329355307 .taskTextOutsideRight {
                   fill: black;
                   text-anchor: start;
                   font-size: 11px; }
                 
-                #mermaid-1552218090445 .taskTextOutsideLeft {
+                #mermaid-1552329355307 .taskTextOutsideLeft {
                   fill: black;
                   text-anchor: end;
                   font-size: 11px; }
                 
                 
-                #mermaid-1552218090445 .taskText0,
-                #mermaid-1552218090445 .taskText1,
-                #mermaid-1552218090445 .taskText2,
-                #mermaid-1552218090445 .taskText3 {
+                #mermaid-1552329355307 .taskText0,
+                #mermaid-1552329355307 .taskText1,
+                #mermaid-1552329355307 .taskText2,
+                #mermaid-1552329355307 .taskText3 {
                   fill: white; }
                 
-                #mermaid-1552218090445 .task0,
-                #mermaid-1552218090445 .task1,
-                #mermaid-1552218090445 .task2,
-                #mermaid-1552218090445 .task3 {
+                #mermaid-1552329355307 .task0,
+                #mermaid-1552329355307 .task1,
+                #mermaid-1552329355307 .task2,
+                #mermaid-1552329355307 .task3 {
                   fill: #8a90dd;
                   stroke: #534fbc; }
                 
-                #mermaid-1552218090445 .taskTextOutside0,
-                #mermaid-1552218090445 .taskTextOutside2 {
+                #mermaid-1552329355307 .taskTextOutside0,
+                #mermaid-1552329355307 .taskTextOutside2 {
                   fill: black; }
                 
-                #mermaid-1552218090445 .taskTextOutside1,
-                #mermaid-1552218090445 .taskTextOutside3 {
+                #mermaid-1552329355307 .taskTextOutside1,
+                #mermaid-1552329355307 .taskTextOutside3 {
                   fill: black; }
                 
                 
-                #mermaid-1552218090445 .active0,
-                #mermaid-1552218090445 .active1,
-                #mermaid-1552218090445 .active2,
-                #mermaid-1552218090445 .active3 {
+                #mermaid-1552329355307 .active0,
+                #mermaid-1552329355307 .active1,
+                #mermaid-1552329355307 .active2,
+                #mermaid-1552329355307 .active3 {
                   fill: #bfc7ff;
                   stroke: #534fbc; }
                 
-                #mermaid-1552218090445 .activeText0,
-                #mermaid-1552218090445 .activeText1,
-                #mermaid-1552218090445 .activeText2,
-                #mermaid-1552218090445 .activeText3 {
+                #mermaid-1552329355307 .activeText0,
+                #mermaid-1552329355307 .activeText1,
+                #mermaid-1552329355307 .activeText2,
+                #mermaid-1552329355307 .activeText3 {
                   fill: black !important; }
                 
                 
-                #mermaid-1552218090445 .done0,
-                #mermaid-1552218090445 .done1,
-                #mermaid-1552218090445 .done2,
-                #mermaid-1552218090445 .done3 {
+                #mermaid-1552329355307 .done0,
+                #mermaid-1552329355307 .done1,
+                #mermaid-1552329355307 .done2,
+                #mermaid-1552329355307 .done3 {
                   stroke: grey;
                   fill: lightgrey;
                   stroke-width: 2; }
                 
-                #mermaid-1552218090445 .doneText0,
-                #mermaid-1552218090445 .doneText1,
-                #mermaid-1552218090445 .doneText2,
-                #mermaid-1552218090445 .doneText3 {
+                #mermaid-1552329355307 .doneText0,
+                #mermaid-1552329355307 .doneText1,
+                #mermaid-1552329355307 .doneText2,
+                #mermaid-1552329355307 .doneText3 {
                   fill: black !important; }
                 
                 
-                #mermaid-1552218090445 .crit0,
-                #mermaid-1552218090445 .crit1,
-                #mermaid-1552218090445 .crit2,
-                #mermaid-1552218090445 .crit3 {
+                #mermaid-1552329355307 .crit0,
+                #mermaid-1552329355307 .crit1,
+                #mermaid-1552329355307 .crit2,
+                #mermaid-1552329355307 .crit3 {
                   stroke: #ff8888;
                   fill: red;
                   stroke-width: 2; }
                 
-                #mermaid-1552218090445 .activeCrit0,
-                #mermaid-1552218090445 .activeCrit1,
-                #mermaid-1552218090445 .activeCrit2,
-                #mermaid-1552218090445 .activeCrit3 {
+                #mermaid-1552329355307 .activeCrit0,
+                #mermaid-1552329355307 .activeCrit1,
+                #mermaid-1552329355307 .activeCrit2,
+                #mermaid-1552329355307 .activeCrit3 {
                   stroke: #ff8888;
                   fill: #bfc7ff;
                   stroke-width: 2; }
                 
-                #mermaid-1552218090445 .doneCrit0,
-                #mermaid-1552218090445 .doneCrit1,
-                #mermaid-1552218090445 .doneCrit2,
-                #mermaid-1552218090445 .doneCrit3 {
+                #mermaid-1552329355307 .doneCrit0,
+                #mermaid-1552329355307 .doneCrit1,
+                #mermaid-1552329355307 .doneCrit2,
+                #mermaid-1552329355307 .doneCrit3 {
                   stroke: #ff8888;
                   fill: lightgrey;
                   stroke-width: 2;
                   cursor: pointer;
                   shape-rendering: crispEdges; }
                 
-                #mermaid-1552218090445 .doneCritText0,
-                #mermaid-1552218090445 .doneCritText1,
-                #mermaid-1552218090445 .doneCritText2,
-                #mermaid-1552218090445 .doneCritText3 {
+                #mermaid-1552329355307 .doneCritText0,
+                #mermaid-1552329355307 .doneCritText1,
+                #mermaid-1552329355307 .doneCritText2,
+                #mermaid-1552329355307 .doneCritText3 {
                   fill: black !important; }
                 
-                #mermaid-1552218090445 .activeCritText0,
-                #mermaid-1552218090445 .activeCritText1,
-                #mermaid-1552218090445 .activeCritText2,
-                #mermaid-1552218090445 .activeCritText3 {
+                #mermaid-1552329355307 .activeCritText0,
+                #mermaid-1552329355307 .activeCritText1,
+                #mermaid-1552329355307 .activeCritText2,
+                #mermaid-1552329355307 .activeCritText3 {
                   fill: black !important; }
                 
-                #mermaid-1552218090445 .titleText {
+                #mermaid-1552329355307 .titleText {
                   text-anchor: middle;
                   font-size: 18px;
                   fill: black; }
                 
-                #mermaid-1552218090445 g.classGroup text {
+                #mermaid-1552329355307 g.classGroup text {
                   fill: #9370DB;
                   stroke: none;
                   font-family: 'trebuchet ms', verdana, arial;
                   font-size: 10px; }
                 
-                #mermaid-1552218090445 g.classGroup rect {
+                #mermaid-1552329355307 g.classGroup rect {
                   fill: #ECECFF;
                   stroke: #9370DB; }
                 
-                #mermaid-1552218090445 g.classGroup line {
+                #mermaid-1552329355307 g.classGroup line {
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 .classLabel .box {
+                #mermaid-1552329355307 .classLabel .box {
                   stroke: none;
                   stroke-width: 0;
                   fill: #ECECFF;
                   opacity: 0.5; }
                 
-                #mermaid-1552218090445 .classLabel .label {
+                #mermaid-1552329355307 .classLabel .label {
                   fill: #9370DB;
                   font-size: 10px; }
                 
-                #mermaid-1552218090445 .relation {
+                #mermaid-1552329355307 .relation {
                   stroke: #9370DB;
                   stroke-width: 1;
                   fill: none; }
                 
-                #mermaid-1552218090445 #compositionStart {
+                #mermaid-1552329355307 #compositionStart {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #compositionEnd {
+                #mermaid-1552329355307 #compositionEnd {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #aggregationStart {
+                #mermaid-1552329355307 #aggregationStart {
                   fill: #ECECFF;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #aggregationEnd {
+                #mermaid-1552329355307 #aggregationEnd {
                   fill: #ECECFF;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #dependencyStart {
+                #mermaid-1552329355307 #dependencyStart {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #dependencyEnd {
+                #mermaid-1552329355307 #dependencyEnd {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #extensionStart {
+                #mermaid-1552329355307 #extensionStart {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 #extensionEnd {
+                #mermaid-1552329355307 #extensionEnd {
                   fill: #9370DB;
                   stroke: #9370DB;
                   stroke-width: 1; }
                 
-                #mermaid-1552218090445 .commit-id,
-                #mermaid-1552218090445 .commit-msg,
-                #mermaid-1552218090445 .branch-label {
+                #mermaid-1552329355307 .commit-id,
+                #mermaid-1552329355307 .commit-msg,
+                #mermaid-1552329355307 .branch-label {
                   fill: lightgrey;
                   color: lightgrey; }
-                </style><style>#mermaid-1552218090445 {
+                </style><style>#mermaid-1552329355307 {
                     color: rgba(0, 0, 0, 0.65098);
                     font: normal normal normal normal 14px/21px "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                  }</style><g transform="translate(-12, -12)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M78.78125,51L103.78125,51L128.78125,51" marker-end="url(#arrowhead10150)" style="fill:none"></path><defs><marker id="arrowhead10150" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M209.453125,51L234.453125,51L259.453125,51" marker-end="url(#arrowhead10151)" style="fill:none"></path><defs><marker id="arrowhead10151" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M343.03125,51L368.03125,51L393.03125,51" marker-end="url(#arrowhead10152)" style="fill:none"></path><defs><marker id="arrowhead10152" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M482.828125,51L507.828125,51L532.828125,51" marker-end="url(#arrowhead10153)" style="fill:none"></path><defs><marker id="arrowhead10153" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" style="opacity: 1;" id="A" transform="translate(49.390625,51)"><rect rx="0" ry="0" x="-29.390625" y="-20.5" width="58.78125" height="41"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-19.390625,-10.5)"><foreignObject width="38.78125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C/C++</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(169.1171875,51)"><rect rx="5" ry="5" x="-40.3359375" y="-31" width="80.671875" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-30.3359375,-21)"><foreignObject width="60.671875" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Clang<br>Front End</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(301.2421875,51)"><rect rx="5" ry="5" x="-41.7890625" y="-31" width="83.578125" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-31.7890625,-21)"><foreignObject width="63.578125" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">LLVM Core<br>Optimizer</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="D" transform="translate(437.9296875,51)"><rect rx="5" ry="5" x="-44.8984375" y="-31" width="89.796875" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.8984375,-21)"><foreignObject width="69.796875" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Emscripten<br>Back End</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="E" transform="translate(585.03125,51)"><rect rx="0" ry="0" x="-52.203125" y="-31" width="104.40625" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-42.203125,-21)"><foreignObject width="84.40625" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">WebAssembly<br>WASM</div></foreignObject></g></g></g></g></g></g></svg>
+                  }</style><g transform="translate(-12, -12)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M78.78125,51L103.78125,51L128.78125,51" marker-end="url(#arrowhead3392)" style="fill:none"></path><defs><marker id="arrowhead3392" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M209.453125,51L234.453125,51L259.453125,51" marker-end="url(#arrowhead3393)" style="fill:none"></path><defs><marker id="arrowhead3393" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M343.03125,51L368.03125,51L393.03125,51" marker-end="url(#arrowhead3394)" style="fill:none"></path><defs><marker id="arrowhead3394" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M482.828125,51L507.828125,51L532.828125,51" marker-end="url(#arrowhead3395)" style="fill:none"></path><defs><marker id="arrowhead3395" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M607.390625,51L632.390625,51L657.390625,51" marker-end="url(#arrowhead3396)" style="fill:none"></path><defs><marker id="arrowhead3396" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(49.390625,51)" style="opacity: 1;"><rect rx="0" ry="0" x="-29.390625" y="-20.5" width="58.78125" height="41"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-19.390625,-10.5)"><foreignObject width="38.78125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C/C++</div></foreignObject></g></g></g><g class="node" id="B" transform="translate(169.1171875,51)" style="opacity: 1;"><rect rx="5" ry="5" x="-40.3359375" y="-31" width="80.671875" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-30.3359375,-21)"><foreignObject width="60.671875" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Clang<br>Front End</div></foreignObject></g></g></g><g class="node" id="C" transform="translate(301.2421875,51)" style="opacity: 1;"><rect rx="5" ry="5" x="-41.7890625" y="-31" width="83.578125" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-31.7890625,-21)"><foreignObject width="63.578125" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">LLVM Core<br>Optimizer</div></foreignObject></g></g></g><g class="node" id="D" transform="translate(437.9296875,51)" style="opacity: 1;"><rect rx="5" ry="5" x="-44.8984375" y="-31" width="89.796875" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.8984375,-21)"><foreignObject width="69.796875" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Emscripten<br>Back End</div></foreignObject></g></g></g><g class="node" id="E" transform="translate(570.109375,51)" style="opacity: 1;"><rect rx="5" ry="5" x="-37.28125" y="-20.5" width="74.5625" height="41"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-27.28125,-10.5)"><foreignObject width="54.5625" height="21"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Binaryen</div></foreignObject></g></g></g><g class="node" id="F" transform="translate(709.59375,51)" style="opacity: 1;"><rect rx="0" ry="0" x="-52.203125" y="-31" width="104.40625" height="62"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-42.203125,-21)"><foreignObject width="84.40625" height="42"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">WebAssembly<br>WASM</div></foreignObject></g></g></g></g></g></g></svg>
                 </div>
         </section>
         <section>
             <h2>Loading into browser</h2>
-            <h4>Web & Javascript API</h4>
-            <pre style="width:60%">
+            <ul>
+              <li class="fragment">Javascript API</li>
+              <li class="fragment">Web API</li>
+            </ul>
+            <pre style="width:60%" class="fragment">
               <code data-trim data-noescape>
                   WebAssembly.instantiateStreaming(
                     fetch('simple.wasm'), 
@@ -1656,7 +1658,7 @@
           <a href="https://wasdk.github.io/WasmFiddle/?1c8pym" target="_black" class="fragment">WASM Fiddle</a>
         </section>
         <section>
-          <h2>Performance comparison</h2>
+          <h2 class="fragment">Sorting 🧮</h2>
           <div class="two-col">
           <ul class="fragment">
             <li>
@@ -2032,6 +2034,10 @@
           <h2>Comparison Results</h2>
           <svg class="fragment" version="1.1" style="width: 831px; height: 383px; top: 0px; left: 0px;"><desc>JavaScript chart by amCharts 3.21.9</desc><g><path cs="100,100" d="M0.5,0.5 L830.5,0.5 L830.5,382.5 L0.5,382.5 Z" fill="#222222" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path><path cs="100,100" d="M0.5,0.5 L728.5,0.5 L728.5,296.5 L0.5,296.5 L0.5,0.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" transform="translate(82,51)"></path></g><g><g transform="translate(82,51)"><g><path cs="100,100" d="M182.5,0.5 L182.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(0,296)"></path><path cs="100,100" d="M0.5,296.5 L0.5,296.5 L0.5,0.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M546.5,0.5 L546.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(0,296)"></path><path cs="100,100" d="M364.5,296.5 L364.5,296.5 L364.5,0.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M728.5,296.5 L728.5,296.5 L728.5,0.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g></g><g transform="translate(82,51)" visibility="visible"><g><path cs="100,100" d="M0.5,296.5 L6.5,296.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,296.5 L0.5,296.5 L728.5,296.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M0.5,237.5 L6.5,237.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,237.5 L0.5,237.5 L728.5,237.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M0.5,178.5 L6.5,178.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,178.5 L0.5,178.5 L728.5,178.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M0.5,118.5 L6.5,118.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,118.5 L0.5,118.5 L728.5,118.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M0.5,59.5 L6.5,59.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,59.5 L0.5,59.5 L728.5,59.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g><g><path cs="100,100" d="M0.5,0.5 L6.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(-6,0)"></path><path cs="100,100" d="M0.5,0.5 L0.5,0.5 L728.5,0.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.1" stroke="#FFFFFF"></path></g></g></g><g></g><g></g><g></g><g></g><g><g transform="translate(82,51)"><g><g transform="translate(36,296)" visibility="visible" aria-label="graph 1 JavaScript 2,400"><path cs="100,100" d="M0.5,0.5 L0.5,-283.5 L291.5,-283.5 L291.5,0.5 L0.5,0.5 Z" fill="#de4c4f" stroke="#de4c4f" fill-opacity="1" stroke-width="1" stroke-opacity="0.9"></path></g><g transform="translate(400,296)" visibility="visible" aria-label="graph 1 Web Assembly 1,800"><path cs="100,100" d="M0.5,0.5 L0.5,-212.5 L291.5,-212.5 L291.5,0.5 L0.5,0.5 Z" fill="#de4c4f" stroke="#de4c4f" fill-opacity="1" stroke-width="1" stroke-opacity="0.9"></path></g></g></g><g transform="translate(82,51)"><g></g></g></g><g></g><g><path cs="100,100" d="M0.5,296.5 L728.5,296.5 L728.5,296.5" fill="none" stroke-width="1" stroke-dasharray="3" stroke-opacity="0.2" stroke="#FFFFFF" transform="translate(82,51)"></path><g><path cs="100,100" d="M0.5,0.5 L728.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(82,346)"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,296.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#FFFFFF" transform="translate(82,51)" visibility="visible"></path></g></g><g></g><g></g><g><g transform="translate(82,51)"></g><g transform="translate(82,51)"></g></g><g><g></g><text y="7" fill="#e7e7e7" font-family="Verdana" font-size="13px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(447,20)" style="pointer-events: none;"><tspan y="7" x="0">Merge Sort run time for 10 000 000 items</tspan></text></g><g><g transform="translate(82,51)" visibility="visible"><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="middle" transform="translate(182,313.5)"><tspan y="6" x="0">JavaScript</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="middle" transform="translate(546,313.5)"><tspan y="6" x="0">Web Assembly</tspan></text></g><g transform="translate(82,51)" visibility="visible"><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,294.75)"><tspan y="6" x="0">0</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,235.75)"><tspan y="6" x="0">500</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,176.75)"><tspan y="6" x="0">1,000</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,116.75)"><tspan y="6" x="0">1,500</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,57.75)"><tspan y="6" x="0">2,000</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,-1.25)"><tspan y="6" x="0">2,500</tspan></text><text y="6" fill="#e7e7e7" font-family="Verdana" font-size="12px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(-61,148) rotate(-90)"><tspan y="6" x="0">milliseconds</tspan></text></g></g><g></g><g transform="translate(82,51)"></g><g></g><g></g></svg>
           <p class="fragment">~30% improvement over JavaScript</p>
+        </section>
+        <section>
+          <h2>browser support</h2>
+          <img src="./support.png" />
         </section>
         <section>
           <h2>A glimpse into the future 🔮</h2>
